@@ -1,0 +1,116 @@
+/* Reset y tipografía base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: #fdfcfb; /* fondo muy suave */
+  color: #4a3f35;      /* tono marrón suave */
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #3e2c27;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #5a463d;
+}
+
+/* Tarjetas */
+.card {
+  background: #fff8f2; /* nude claro */
+  border: 1px solid #e7d9d0;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 6px 16px rgba(80, 62, 51, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(80, 62, 51, 0.15);
+}
+
+/* Botones */
+button, [type="submit"] {
+  background: #d8b4a0; /* nude más fuerte */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.1s ease-in-out;
+}
+
+button:hover, [type="submit"]:hover {
+  background: #c39a87;
+  transform: scale(1.05);
+}
+
+/* Formularios */
+label {
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: #5a463d;
+}
+
+input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #d9c7bc;
+  border-radius: 8px;
+  width: 80px;
+  background: #fff;
+  color: #4a3f35;
+  font-size: 1rem;
+}
+
+/* Lista de salida */
+#output {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#output li {
+  padding: 10px 14px;
+  margin: 8px 0;
+  background: #f7ebe4;
+  border: 1px solid #e0cfc4;
+  border-radius: 10px;
+  font-family: ui-monospace, monospace;
+  color: #3e2c27;
+  font-size: 0.95rem;
+}
+
+/* Textos secundarios */
+.hint {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.small {
+  opacity: 0.65;
+  font-size: 0.9rem;
+}

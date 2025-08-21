@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABP3 - Callbacks y Operaciones</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ABP3 — JavaScript Asíncrono: Callbacks</h1>
+
+    <section class="card">
+      <h2>Actividad 1: Callback simple</h2>
+      <p>La función principal da los “Buenos días” y luego invoca un <em>callback</em> que pregunta: “¿Quieres un café?”</p>
+      <button id="btn-act1">Ejecutar actividad 1</button>
+    </section>
+
+    <section class="card">
+      <h2>Actividad 2: Operaciones con callbacks</h2>
+      <p>
+        La función <code>operaciones(a, b, minora, potencias)</code> calcula la diferencia y la potencia,
+        e invoca dos <em>callbacks</em>. Puedes probar con otros números:
+      </p>
+      <form id="form-operaciones">
+        <label>
+          a:
+          <input id="input-a" type="number" value="5" required />
+        </label>
+        <label>
+          b:
+          <input id="input-b" type="number" value="3" required />
+        </label>
+        <button type="submit">Calcular</button>
+      </form>
+      <p class="hint">En carga de página también se ejecuta con a=5 y b=3.</p>
+    </section>
+
+    <section class="card">
+      <h3>Salida</h3>
+      <ul id="output"></ul>
+      <p class="small">También puedes abrir la consola del navegador para ver los mensajes.</p>
+    </section>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
